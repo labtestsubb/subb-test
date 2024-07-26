@@ -1,0 +1,47 @@
+# Configuration settings
+app:
+  name: breaking-news
+  environment: development
+
+# API keys or credentials
+azure:
+  api_key: 049ad57378164178b9076c48e3b703b1
+  azure_endpoint: "https://opai-zee5-np-sc1-newsott-0001.openai.azure.com/"
+  api_version: "2023-07-01-preview"
+  gpt_deployment : "META-ENRICHER"
+
+# Open AI Chat GPT credentials 
+open_ai:
+  embed_deployment : "EMBEDDING-GENERATOR"
+  gpt_deployment : "META-ENRICHER"
+  api_key : "049ad57378164178b9076c48e3b703b1"
+  azure_endpoint : "https://opai-zee5-np-sc1-newsott-0001.openai.azure.com/"
+  api_version : "2023-07-01-preview"
+
+# Database configuration - cassandra
+database:
+  cassandra_endpoint : 'cosmos-zee5-qa-ci1-newsott-0001.cassandra.cosmos.azure.com'
+  port: 10350
+  username: 'cosmos-zee5-qa-ci1-newsott-0001'
+  password: 'M4iQXQDaInQHGHJ2poKuV5KhKENvx8L5OobKZzbZN4gAQHuy4MO4rUjqDgCb6dXaDhDEBRnSPuMlACDbbSwJ2Q=='
+  key_space: 'zee5_news'
+
+# dataset name
+dataset_name:
+  table_name_cms_data: 'zee5_feeds_tbl'
+  table_name_breaking_news: 'newsott_breaking_news_data' # Final output table of Breaking news
+  table_name_topic_list_new: 'newsott_topic_list_db' # Table which has the final topics along with the asset count
+  table_name_topic_list_cleaned_mapping: 'newsott_topic_list_cleaned_mapping' #Table which has the topics and similar topic mapping (Similar topics are grouped)
+  table_name_sorted_daily: 'newsott_sorted_daily_data' # Final output table of Sorted daily
+
+# APIs used in modules
+apis:
+  base_url : "https://apim-zee5-qa-ci1-csvc-0001.azure-api.net"
+  
+#azure blob storage
+blob_storage:
+  account_name : 'stzee5qaci1cms0001'
+  account_key : 'U8h01YRQjeUwzrIblaCHircEt5m5W7lXKP6cbICClN8m19mVzSbbmVXrs1k4EDqLpeti932/83Kg+AStrF8diQ=='
+  container_name : 'az-zee5-qa-cms-rss-published-images'
+  blob_service_client : BlobServiceClient(account_url=f"https://{account_name}.blob.core.windows.net", credential=account_key)
+
