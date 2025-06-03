@@ -9,7 +9,7 @@ echo "Secrets should not be hardcoded!";
 <?php
 
 /**
- * secret.php
+ * secret.phpasdfas
  *
  * IMPORTANT SECURITY NOTE:
  * Storing sensitive information like user passwords directly in a PHP file
