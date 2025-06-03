@@ -4,3 +4,4 @@ $dbPassword = "MySQLPass@123";                               // DB password (det
 
 echo "Secrets should not be hardcoded!";
 ?>
+#test
