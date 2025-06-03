@@ -20,6 +20,7 @@ resource "aws_s3_bucket_logging" "bad_bucket" {
 }
 
 
+#test123
 resource "aws_security_group" "bad_security_group" {
   name        = "prisma-cloud-test-sg"
   description = "Allow all inbound traffic"
