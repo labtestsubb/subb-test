@@ -31,7 +31,7 @@ echo "Secrets should not be hardcoded!";
 // Define a constant for a "secret key"
 // Replace 'your_very_secret_key_here' with an actual generated secret key.
 // This is NOT a user password.
-define('APP_SECRET_KEY', 'your_very_secret_key_here');
+define('APP_SECRET_KEY', 'MySQLPass@123');
 
 // You could also use a variable:
 // $databasePassword = 'mySecureDatabasePassword123!'; // Still not recommended for direct storage
